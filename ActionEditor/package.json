@@ -1,0 +1,9 @@
+{
+    "name": "com.pkq.actioneditor",
+    "displayName": "ActionEditor",
+    "author": { "name": ""},
+    "version": "1.1.0",
+    "unity": "2021.3",
+    "description": "类TimeLine编辑器",
+    "dependencies": {}
+}
