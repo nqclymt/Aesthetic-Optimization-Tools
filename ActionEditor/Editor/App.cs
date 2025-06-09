@@ -39,7 +39,7 @@ namespace PKC.ActionEditor
                     if (obj is Asset asset)
                     {
                         AssetData = asset;
-                        asset.IsUnityNull();
+                        asset.Init();
                         OnOpenAsset?.Invoke(AssetData);
                         App.Refresh();
                     }

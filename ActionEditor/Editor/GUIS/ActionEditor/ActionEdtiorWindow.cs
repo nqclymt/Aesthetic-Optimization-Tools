@@ -39,7 +39,8 @@ namespace PKC.ActionEditor
         #region Lifecyle
 
         private void OnEnable()
-        { App.Window = this;
+        { 
+            App.Window = this;
             EditorSceneManager.sceneSaving -= OnWillSaveScene;
             EditorSceneManager.sceneSaving += OnWillSaveScene;
 
@@ -76,7 +77,7 @@ namespace PKC.ActionEditor
             if (App.AssetData == null)
             {
                 // Test();
-                _welcomeView.OnGUI(this.position);
+                 _welcomeView.OnGUI(this.position);
                 return;
             }
 
@@ -85,7 +86,7 @@ namespace PKC.ActionEditor
                 Debug.Log("MouseMove===11");
                 Repaint();
             }
-            
+          
             _timelineView.OnGUI(this.position);
             App.OnGUIEnd();
         }

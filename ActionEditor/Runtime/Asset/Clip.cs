@@ -36,7 +36,7 @@ namespace PKC.ActionEditor
 
         public virtual bool IsValid => false;
 
-        [Unity.VisualScripting.FullSerializer.fsIgnore] public IDirector Root => Parent?.Root;
+        [fsIgnore] public IDirector Root => Parent?.Root;
         
         [fsIgnore]public IDirectable Parent { get; private set; }
 
