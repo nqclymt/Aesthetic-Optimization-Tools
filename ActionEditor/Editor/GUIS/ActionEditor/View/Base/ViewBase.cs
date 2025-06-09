@@ -48,8 +48,8 @@ namespace PKC.ActionEditor
             Position = rect;
             try
             {
-                OnDraw();
-                CheckPointerEvent();
+                 OnDraw();
+                 CheckPointerEvent();
             }
             catch (Exception e)
             {
